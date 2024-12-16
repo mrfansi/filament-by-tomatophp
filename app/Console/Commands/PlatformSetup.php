@@ -33,6 +33,7 @@ class PlatformSetup extends Command
         'filament-browser:install',
         'filament-cms:install',
         'filament-docs:install',
+        'filament-ecommerce:install',
 
     ];
 
@@ -77,6 +78,11 @@ class PlatformSetup extends Command
         'filament-docs-views',
         'filament-docs-lang',
         'filament-docs-migrations',
+
+        'filament-ecommerce-config',
+        'filament-ecommerce-views',
+        'filament-ecommerce-lang',
+        'filament-ecommerce-migrations',
     ];
 
     /**
