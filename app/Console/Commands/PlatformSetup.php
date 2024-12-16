@@ -39,6 +39,14 @@ class PlatformSetup extends Command
         'filament-invoices:install',
         'filament-language-switcher:install',
         'filament-locations:install',
+        'filament-logger:install',
+        'filament-media-manager:install',
+        'filament-menus:install',
+        'filament-notes:install',
+        'filament-payments:install',
+        'filament-plugins:install',
+        'filament-pos:install',
+        'filament-pwa:install',
     ];
 
     protected array $tags = [
@@ -109,6 +117,43 @@ class PlatformSetup extends Command
         'filament-locations-views',
         'filament-locations-lang',
         'filament-locations-migrations',
+
+        'filament-logger-config',
+        'filament-logger-lang',
+        'filament-logger-migrations',
+
+        'filament-media-manager-config',
+        'filament-media-manager-views',
+        'filament-media-manager-lang',
+        'filament-media-manager-migrations',
+
+        'filament-menus-config',
+        'filament-menus-views',
+        'filament-menus-lang',
+        'filament-menus-migrations',
+
+        'filament-notes-config',
+        'filament-notes-views',
+        'filament-notes-lang',
+        'filament-notes-migrations',
+
+        'filament-payments-config',
+        'filament-payments-views',
+        'filament-payments-lang',
+        'filament-payments-migrations',
+
+        'filament-plugins-config',
+        'filament-plugins-views',
+        'filament-plugins-lang',
+        'filament-plugins-migrations',
+
+        'filament-pos-config',
+        'filament-pos-views',
+        'filament-pos-lang',
+
+        'filament-pwa-config',
+        'filament-pwa-views',
+        'filament-pwa-lang',
     ];
 
     /**

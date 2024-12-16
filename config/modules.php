@@ -13,7 +13,7 @@ return [
     | Default module namespace.
     |
     */
-    'namespace' => 'modules',
+    'namespace' => 'Modules',
 
     /*
     |--------------------------------------------------------------------------
@@ -62,18 +62,18 @@ return [
     'paths' => [
         /*
         |--------------------------------------------------------------------------
-        | modules path
+        | Modules path
         |--------------------------------------------------------------------------
         |
         | This path is used to save the generated module.
         | This path will also be added automatically to the list of scanned folders.
         |
         */
-        'modules' => base_path('modules'),
+        'modules' => base_path('Modules'),
 
         /*
         |--------------------------------------------------------------------------
-        | modules assets path
+        | Modules assets path
         |--------------------------------------------------------------------------
         |
         | Here you may update the modules' assets path.
@@ -170,7 +170,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Auto Discover of modules
+    | Auto Discover of Modules
     |--------------------------------------------------------------------------
     |
     | Here you configure auto discover of module
