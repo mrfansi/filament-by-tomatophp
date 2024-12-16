@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "efe49ca49d4b48122d256ff23bce7dea",
+    "content-hash": "ede2388b8a41ebc46473679945be84c2",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -13183,6 +13183,67 @@
                 }
             ],
             "time": "2024-09-17T16:34:42+00:00"
+        },
+        {
+            "name": "tomatophp/filament-bookmarks-menu",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomatophp/filament-bookmarks-menu.git",
+                "reference": "9ad5eacebc0ee6b2540ecb011f457f728dcac20a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomatophp/filament-bookmarks-menu/zipball/9ad5eacebc0ee6b2540ecb011f457f728dcac20a",
+                "reference": "9ad5eacebc0ee6b2540ecb011f457f728dcac20a",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "php": "^8.1",
+                "tomatophp/console-helpers": "^1.1",
+                "tomatophp/filament-icons": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TomatoPHP\\FilamentBookmarksMenu\\FilamentBookmarksMenuServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TomatoPHP\\FilamentBookmarksMenu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fady Mondy",
+                    "email": "info@3x1.io"
+                }
+            ],
+            "description": "Add bookmarks and tags to your resources records and access theme form your sidebar",
+            "keywords": [
+                "laravel",
+                "php",
+                "template"
+            ],
+            "support": {
+                "issues": "https://github.com/tomatophp/filament-bookmarks-menu/issues",
+                "source": "https://github.com/tomatophp/filament-bookmarks-menu/tree/v1.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/3x1io",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-09-17T16:49:40+00:00"
         },
         {
             "name": "tomatophp/filament-browser",

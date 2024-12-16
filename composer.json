@@ -24,6 +24,7 @@
         "tomatophp/filament-alerts": "^2.0",
         "tomatophp/filament-api": "^1.0",
         "tomatophp/filament-artisan": "^1.1",
+        "tomatophp/filament-bookmarks-menu": "^1.0",
         "tomatophp/filament-browser": "^2.0",
         "tomatophp/filament-cms": "^1.0",
         "tomatophp/filament-developer-gate": "^1.0",
