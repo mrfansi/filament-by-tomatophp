@@ -35,6 +35,7 @@
         "tomatophp/filament-helpers": "^1.0",
         "tomatophp/filament-icons": "^1.1",
         "tomatophp/filament-invoices": "^1.0",
+        "tomatophp/filament-language-switcher": "^1.0",
         "tomatophp/filament-locations": "^1.0",
         "tomatophp/filament-media-manager": "^1.1",
         "tomatophp/filament-menus": "^1.0",

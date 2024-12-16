@@ -34,7 +34,11 @@ class PlatformSetup extends Command
         'filament-cms:install',
         'filament-docs:install',
         'filament-ecommerce:install',
-
+        'filament-fcm:install',
+        'filament-icons:install',
+        'filament-invoices:install',
+        'filament-language-switcher:install',
+        'filament-locations:install',
     ];
 
     protected array $tags = [
@@ -83,6 +87,28 @@ class PlatformSetup extends Command
         'filament-ecommerce-views',
         'filament-ecommerce-lang',
         'filament-ecommerce-migrations',
+
+        'filament-fcm-config',
+        'filament-fcm-views',
+        'filament-fcm-migrations',
+
+        'filament-icons-config',
+        'filament-icons-views',
+
+        'filament-invoices-config',
+        'filament-invoices-views',
+        'filament-invoices-lang',
+        'filament-invoices-migrations',
+
+        'filament-language-switcher-config',
+        'filament-language-switcher-views',
+        'filament-language-switcher-lang',
+        'filament-language-switcher-migrations',
+
+        'filament-locations-config',
+        'filament-locations-views',
+        'filament-locations-lang',
+        'filament-locations-migrations',
     ];
 
     /**
