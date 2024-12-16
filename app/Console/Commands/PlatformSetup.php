@@ -32,6 +32,7 @@ class PlatformSetup extends Command
         'filament-bookmarks-menu:install',
         'filament-browser:install',
         'filament-cms:install',
+        'filament-docs:install',
 
     ];
 
@@ -54,6 +55,11 @@ class PlatformSetup extends Command
         'filament-browser-lang',
         'filament-browser-migrations',
 
+        'filament-cms-config',
+        'filament-cms-views',
+        'filament-cms-lang',
+        'filament-cms-migrations',
+
         'filament-api-config',
 
         'filament-artisan-config',
@@ -64,6 +70,13 @@ class PlatformSetup extends Command
         'filament-developer-gate-views',
         'filament-developer-gate-lang',
         'filament-developer-gate-migrations',
+
+        'filament-discord-config',
+
+        'filament-docs-config',
+        'filament-docs-views',
+        'filament-docs-lang',
+        'filament-docs-migrations',
     ];
 
     /**

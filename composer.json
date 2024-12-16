@@ -29,6 +29,7 @@
         "tomatophp/filament-cms": "^1.0",
         "tomatophp/filament-developer-gate": "^1.0",
         "tomatophp/filament-discord": "^1.0",
+        "tomatophp/filament-docs": "^1.0",
         "tomatophp/filament-ecommerce": "^1.0",
         "tomatophp/filament-fcm": "^1.0",
         "tomatophp/filament-helpers": "^1.0",
