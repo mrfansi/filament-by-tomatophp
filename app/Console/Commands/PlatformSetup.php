@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
 class PlatformSetup extends Command
@@ -47,6 +48,12 @@ class PlatformSetup extends Command
         'filament-plugins:install',
         'filament-pos:install',
         'filament-pwa:install',
+        'filament-seo:install',
+        'filament-settings-hub:install',
+        'filament-simple-theme:install',
+        'filament-social:install',
+        'filament-subscriptions:install',
+        'filament-translations:install',
     ];
 
     protected array $tags = [
@@ -154,6 +161,37 @@ class PlatformSetup extends Command
         'filament-pwa-config',
         'filament-pwa-views',
         'filament-pwa-lang',
+
+        'filament-seo-config',
+        'filament-seo-views',
+        'filament-seo-lang',
+        'filament-seo-migrations',
+
+        'filament-settings-hub-config',
+        'filament-settings-hub-views',
+        'filament-settings-hub-lang',
+        'filament-settings-hub-migrations',
+
+        'filament-simple-theme-config',
+        'filament-simple-theme-views',
+        'filament-simple-theme-lang',
+        'filament-simple-theme-migrations',
+
+        'filament-social-config',
+        'filament-social-views',
+        'filament-social-lang',
+        'filament-social-migrations',
+
+        'filament-subscriptions-config',
+        'filament-subscriptions-views',
+        'filament-subscriptions-lang',
+
+        'filament-translation-component-config',
+        'filament-translation-component-lang',
+
+        'filament-translations-views',
+        'filament-translations-lang',
+        'filament-translations-migrations',
     ];
 
     /**
@@ -161,6 +199,18 @@ class PlatformSetup extends Command
      */
     public function handle(): void
     {
+        $files = File::files(database_path('migrations'));
+
+        foreach ($files as $file) {
+            if (str_contains($file->getFilename(), 'sites_settings')) {
+                File::delete($file->getRealPath());
+                $this->info("Successfully deleted " . $file->getFilename());
+            }
+        }
+
+        $this->callSilently('migrate:fresh');
+        $this->info('Successfully creating database');
+
         foreach ($this->commands as $command) {
             $this->callSilently($command);
             $packageName = Str::beforeLast($command, ':');
@@ -176,5 +226,8 @@ class PlatformSetup extends Command
             $this->callSilently('vendor:publish', ['--tag' => $tag]);
             $this->info("Successfully published $tag");
         }
+
+
+
     }
 }
